@@ -212,7 +212,7 @@ pub fn scaffold_tauri_happ(
             let package_json_content = add_npm_script_to_package(
                 &(root_package_json_path.clone(), package_json_content),
                 &String::from("build:zomes"),
-                &format!("CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown --workspace --exclude {app_name}"),
+                &format!("CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown --workspace --exclude {app_name}-tauri"),
             )?;
             let package_json_content = add_npm_script_to_package(
                 &(root_package_json_path.clone(), package_json_content),
