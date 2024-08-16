@@ -83,3 +83,54 @@ jobs:
           releaseDraft: true
           prerelease: true
           args: $\{{ matrix.args }}
+          
+  release-android-app:
+    strategy:
+      fail-fast: true
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@main
+
+      - name: Install nix
+        uses: cachix/install-nix-action@v25
+        with:
+          install_url: https://releases.nixos.org/nix/nix-2.20.0/install
+          extra_nix_config: |
+            experimental-features = flakes nix-command
+
+      - uses: cachix/cachix-action@v14
+        with:
+          name: forum
+          extraPullNames: holochain-ci,holochain-open-dev,darksoil-studio
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+
+      - name: Install dependencies
+        run: |
+          nix develop .#androidDev
+          npm i
+          
+      - name: Build happ & webhapp
+        run: nix develop --command bash -c "npm run build:happ"
+
+      - name: Build Android app
+        run: nix develop .#androidDev --command bash -c "npm run tauri android build"
+
+      - name: Retrieve version
+        run: |
+          echo "APP_VERSION=$(cat src-tauri/tauri.conf.json | grep -oP '(?<="version": ")[^"]*')" >> $GITHUB_OUTPUT
+        id: version
+
+      - id: create-release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          artifacts: "src-tauri/gen/android/app/build/outputs/apk/universal/release/*.apk,src-tauri/gen/android/app/build/outputs/bundle/universalRelease/*.aab"
+          body: "See assets below to download and install this version."
+          name: {{title_case app_name}} v$\{{ steps.version.outputs.APP_VERSION }}
+          tag: v$\{{ steps.version.outputs.APP_VERSION }}
+          prerelease: true
+          draft: true
