@@ -2111,7 +2111,6 @@
           ]
         },
         {
-          "description": "holochain:default -> Default permissions for the plugin",
           "type": "string",
           "enum": [
             "holochain:default"
@@ -2122,13 +2121,6 @@
           "type": "string",
           "enum": [
             "holochain:allow-get-locales"
-          ]
-        },
-        {
-          "description": "holochain:allow-get-runtime-info -> Enables the get_runtime_info command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "holochain:allow-get-runtime-info"
           ]
         },
         {
@@ -2164,13 +2156,6 @@
           "type": "string",
           "enum": [
             "holochain:deny-get-locales"
-          ]
-        },
-        {
-          "description": "holochain:deny-get-runtime-info -> Denies the get_runtime_info command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "holochain:deny-get-runtime-info"
           ]
         },
         {

@@ -11,7 +11,7 @@ use holochain_client::AdminWebsocket;
 use crate::{
     filesystem::FileSystem,
     launch::signal::{can_connect_to_signal_server, run_local_signal_service},
-    HolochainPluginConfig, HolochainRuntime,
+    HolochainManagerConfig, HolochainRuntime,
 };
 
 mod mdns;
@@ -38,7 +38,7 @@ fn override_gossip_arc_clamping() -> Option<String> {
 /// Launch the holochain conductor in the background
 pub async fn launch_holochain_runtime(
     passphrase: BufRead,
-    config: HolochainPluginConfig,
+    config: HolochainManagerConfig,
 ) -> crate::Result<HolochainRuntime> {
     // let mut lock = RUNNING_HOLOCHAIN.write().await;
 

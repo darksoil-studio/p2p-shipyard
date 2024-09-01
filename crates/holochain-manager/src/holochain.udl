@@ -1,0 +1,21 @@
+namespace holochain {
+  HolochainRuntime launch_holochain_runtime(string passphrase, HolochainPluginConfig config);
+};
+
+dictionary HolochainRuntime {
+    FileSystem filesystem;
+    Arc<Mutex<Vec<AppWebsocketAuth>>> apps_websockets_auths;
+    u16 admin_port;
+    ConductorHandle conductor_handle;
+    _signal_handle? SrvHnd;
+};
+
+dictionary WANNetworkConfig  {
+  string bootstrap_url;
+  string signal_url;
+};
+
+dictionary HolochainPluginConfig  {
+  WANNetworkConfig? wan_network_config;
+  string holochain_dir;
+};

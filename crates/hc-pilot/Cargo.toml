@@ -10,6 +10,7 @@ tauri = "2.0.0-rc"
 tauri-plugin-log = "2.0.0-rc"
 
 tauri-plugin-holochain = { path = "../tauri-plugin-holochain" }
+holochain-manager = { path = "../holochain-manager" }
 holochain_types = "0.3.2"
 holochain_client = "0.5.1"
 

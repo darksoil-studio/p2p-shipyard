@@ -2,7 +2,7 @@ use holochain_types::prelude::AppBundle;
 use lair_keystore::dependencies::sodoken::{BufRead, BufWrite};
 use std::collections::HashMap;
 use std::path::PathBuf;
-use tauri_plugin_holochain::{HolochainExt, HolochainPluginConfig, WANNetworkConfig};
+use tauri_plugin_holochain::{HolochainExt, HolochainManagerConfig, WANNetworkConfig};
 use url2::Url2;
 use tauri::{AppHandle, Listener};
 
@@ -87,7 +87,7 @@ pub fn run() {
         )
         .plugin(tauri_plugin_holochain::async_init(
             vec_to_locked(vec![]).expect("Can't build passphrase"),
-            HolochainPluginConfig {
+            HolochainManagerConfig {
                 holochain_dir: holochain_dir(),
                 wan_network_config: wan_network_config(),
             },

@@ -309,20 +309,6 @@
           ]
         },
         {
-          "description": "allow-get-runtime-info -> Enables the get_runtime_info command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "allow-get-runtime-info"
-          ]
-        },
-        {
-          "description": "deny-get-runtime-info -> Denies the get_runtime_info command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "deny-get-runtime-info"
-          ]
-        },
-        {
           "description": "allow-is-holochain-ready -> Enables the is_holochain_ready command without any pre-configured scope.",
           "type": "string",
           "enum": [
@@ -376,13 +362,6 @@
           "type": "string",
           "enum": [
             "deny-sign-zome-call"
-          ]
-        },
-        {
-          "description": "default -> Default permissions for the plugin",
-          "type": "string",
-          "enum": [
-            "default"
           ]
         }
       ]

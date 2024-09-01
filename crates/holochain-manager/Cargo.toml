@@ -1,0 +1,63 @@
+[package]
+name = "holochain-manager"
+version = "0.0.0"
+authors = ["guillem@darksoil.studio"]
+description = ""
+edition = "2021"
+rust-version = "1.75"
+
+[dependencies]
+# Holochain dependencies
+mr_bundle = "0.3.2"
+holochain = "0.3.2"
+holochain_types = "0.3.2"
+holochain_keystore = "0.3.2"
+holochain_conductor_api = "0.3.2"
+
+kitsune_p2p_mdns = "0.3.2"
+kitsune_p2p_types = "0.3.2"
+
+tx5-signal-srv = "0.0.14-alpha"
+tx5-signal = "0.0.14-alpha"
+
+# Lair dependencies
+hc_seed_bundle = "0.2"
+lair_keystore = "0.4.5"
+lair_keystore_api = "0.4.5"
+
+# Holochain client
+holochain_client = "0.5.1"
+
+local-ip-address = "0.6"
+serde_json = "1"
+sha256 = "1"
+log = "0.4"
+symlink = "0.1.0"
+nanoid = "0.4.0"
+async-std = "1.12"
+serde = "1.0.193"
+thiserror = "1.0"
+url = "2.4.0"
+url2 = "0.0.6"
+zip = { version = "0.6" }
+bzip2 = { version = "0.4", features = ["static"] }
+portpicker = "0.1"
+mime_guess = "2.0.4"
+hyper = { version = "1", features = ["full"] }
+hyper-util = { version = "0.1", features = ["full"] }
+http-body-util = "0.1"
+tls-listener = "0.8"
+futures = "0.3"
+either = "*"
+tokio = "1"
+one_err = "0"
+base64 = "0.22"
+anyhow = "1"
+async-trait = "0.1"
+
+[features]
+default = ["gossip_arc_normal"]
+
+gossip_arc_empty = []
+gossip_arc_full = []
+gossip_arc_normal = []
