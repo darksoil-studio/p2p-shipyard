@@ -1,0 +1,32 @@
+[package]
+name = "holochain-manager-uniffi"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+name = "holochain_manager_uniffi"
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "uniffi-bindgen.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+holochain-manager = { path = "../holochain-manager", default-features = false }
+holochain_conductor_api = "0.3.2"
+
+thiserror = "1.0.63"
+url2 = "0.0.6"
+uniffi = { version = "0.28.1", features = ["cli"] }
+
+[build-dependencies]
+uniffi = { version = "0.28.1", features = ["build"] }
+
+[features]
+default = ["gossip_arc_normal"]
+gossip_arc_empty = ["holochain-manager/gossip_arc_empty"]
+gossip_arc_full = ["holochain-manager/gossip_arc_full"]
+gossip_arc_normal = ["holochain-manager/gossip_arc_normal"]

@@ -1,0 +1,7 @@
+[bindings.kotlin]
+package_name = "uniffi.holochain_manager_uniffi"
+cdylib_name = "holochain_manager_uniffi"
+android = true
+
+[bindings.swift]
+cdylib_name = "holochain_manager_uniffi"

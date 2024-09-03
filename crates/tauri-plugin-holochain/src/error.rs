@@ -1,51 +1,20 @@
-use holochain::{conductor::error::ConductorError, prelude::SerializedBytesError};
-use holochain_client::ConductorApiError;
-use mr_bundle::error::MrBundleError;
-use one_err::OneErr;
+use holochain_manager::commands::UpdateAppError;
 use serde::{ser::Serializer, Serialize};
-
-use crate::{commands::install_web_app::UpdateAppError, filesystem::FileSystemError};
 
 pub type Result<T> = std::result::Result<T, Error>;
 
 #[derive(Debug, thiserror::Error)]
 pub enum Error {
     #[error(transparent)]
-    Io(#[from] std::io::Error),
-
-    #[cfg(mobile)]
-    #[error(transparent)]
-    PluginInvoke(#[from] tauri::plugin::mobile::PluginInvokeError),
-
-    #[error(transparent)]
-    LairError(OneErr),
-
-    #[error(transparent)]
-    ConductorError(#[from] ConductorError),
-
-    #[error(transparent)]
-    SerializedBytesError(#[from] SerializedBytesError),
-
-    #[error(transparent)]
-    MrBundleError(#[from] MrBundleError),
+    HolochainManagerError(#[from] holochain_manager::Error),
 
     #[error(transparent)]
     TauriError(#[from] tauri::Error),
-
-    #[error(transparent)]
-    FileSystemError(#[from] FileSystemError),
-
-    #[error("JSON serialization error: {0}")]
-    SerdeJsonError(#[from] serde_json::Error),
-
     #[error("Lock error: {0}")]
     LockError(String),
 
     #[error(transparent)]
     UrlParseError(#[from] url::ParseError),
-
-    #[error("ConductorApiError: `{0:?}`")]
-    ConductorApiError(ConductorApiError),
 
     #[error("Http server error: {0}")]
     HttpServerError(String),
@@ -73,7 +42,7 @@ pub enum Error {
 
     #[error("App \"{0}\" does not have any UI")]
     AppDoesNotHaveUIError(String),
-
+    
     #[error(transparent)]
     UpdateAppError(#[from] UpdateAppError),
 }

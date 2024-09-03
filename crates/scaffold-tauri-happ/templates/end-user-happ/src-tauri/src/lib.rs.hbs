@@ -1,7 +1,7 @@
 use holochain_types::prelude::AppBundle; use lair_keystore::dependencies::sodoken::{BufRead, BufWrite};
 use std::collections::HashMap;
 use std::path::PathBuf;
-use tauri_plugin_holochain::{HolochainPluginConfig, HolochainExt, WANNetworkConfig};
+use tauri_plugin_holochain::{HolochainExt, HolochainManagerConfig, WANNetworkConfig};
 use tauri::AppHandle;
 
 const APP_ID: &'static str = "{{app_name}}";
@@ -23,7 +23,7 @@ pub fn run() {
         )
         .plugin(tauri_plugin_holochain::init(
             vec_to_locked(vec![]).expect("Can't build passphrase"),
-            HolochainPluginConfig {
+            HolochainManagerConfig {
                 wan_network_config: wan_network_config(),
                 holochain_dir: holochain_dir(),
             },
@@ -58,16 +58,17 @@ pub fn run() {
 //
 // You can modify this function to suit your needs if they become more complex
 async fn setup(handle: AppHandle) -> anyhow::Result<()> {
-    let admin_ws = handle.holochain()?.admin_websocket().await?;
+    let admin_ws = handle.holochain()?.holochain_runtime.admin_websocket().await?;
 
     let installed_apps = admin_ws
         .list_apps(None)
         .await
-        .map_err(|err| tauri_plugin_holochain::Error::ConductorApiError(err))?;
+        .map_err(|err| tauri_plugin_holochain::HolochainManagerError::ConductorApiError(err))?;
 
     if installed_apps.len() == 0 {
         handle
             .holochain()?
+            .holochain_runtime
             .install_app(
                 String::from(APP_ID),
                 happ_bundle(),
@@ -79,7 +80,7 @@ async fn setup(handle: AppHandle) -> anyhow::Result<()> {
 
         Ok(())
     } else {
-        handle.holochain()?.update_app_if_necessary(
+        handle.holochain()?.holochain_runtime.update_app_if_necessary(
             String::from(APP_ID),
             happ_bundle()
         ).await?;

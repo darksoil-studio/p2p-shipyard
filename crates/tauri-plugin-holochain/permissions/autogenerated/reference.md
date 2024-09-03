@@ -1,9 +1,5 @@
-## Default Permission
 
-Default permissions for the plugin
-
-
-### Permission Table 
+## Permission Table 
 
 <table>
 <tr>
@@ -34,32 +30,6 @@ Enables the get_locales command without any pre-configured scope.
 <td>
 
 Denies the get_locales command without any pre-configured scope.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`holochain:allow-get-runtime-info`
-
-</td>
-<td>
-
-Enables the get_runtime_info command without any pre-configured scope.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`holochain:deny-get-runtime-info`
-
-</td>
-<td>
-
-Denies the get_runtime_info command without any pre-configured scope.
 
 </td>
 </tr>
