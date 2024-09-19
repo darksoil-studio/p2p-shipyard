@@ -250,7 +250,7 @@
           #     network = pkgs.writeShellApplication {
           #       name = "local-holochain-network";
           #       runtimeInputs =
-          #         [ getFreePort holochain.packages.hc-run-local-services ];
+          #         [ getFreePort holonix.packages.hc-run-local-services ];
           #       text = ''
           #         BOOTSTRAP_PORT=$(get-free-port)
           #         SIGNAL_PORT=$(get-free-port)
@@ -356,8 +356,7 @@
 
         devShells.tauriAndroidDev = let
           overlays = [ (import inputs.rust-overlay) ];
-          rustPkgs = import pkgs.path { inherit system overlays; };
-          rust = rustPkgs.rust-bin.stable."1.77.2".default.override {
+          rust = inputs.holonix.packages.${system}.rust.override {
             extensions = [ "rust-src" ];
             targets = [
               "armv7-linux-androideabi"
@@ -388,8 +387,7 @@
 
         packages.tauriRust = let
           overlays = [ (import inputs.rust-overlay) ];
-          rustPkgs = import pkgs.path { inherit system overlays; };
-          rust = rustPkgs.rust-bin.stable."1.77.2".default.override {
+          rust = inputs.holonix.packages.${system}.rust.override {
             extensions = [ "rust-src" ];
           };
           linuxCargo = pkgs.writeShellApplication {
@@ -407,8 +405,7 @@
 
         packages.holochainTauriRust = let
           overlays = [ (import inputs.rust-overlay) ];
-          rustPkgs = import pkgs.path { inherit system overlays; };
-          rust = rustPkgs.rust-bin.stable."1.77.2".default.override {
+          rust = inputs.holonix.packages.${system}.rust.override {
             extensions = [ "rust-src" ];
             targets = [ "wasm32-unknown-unknown" ];
           };
@@ -427,8 +424,7 @@
 
         packages.androidTauriRust = let
           overlays = [ (import inputs.rust-overlay) ];
-          rustPkgs = import pkgs.path { inherit system overlays; };
-          rust = rustPkgs.rust-bin.stable."1.77.2".default.override {
+          rust = inputs.holonix.packages.${system}.rust.override {
             extensions = [ "rust-src" ];
             targets = [
               "armv7-linux-androideabi"
