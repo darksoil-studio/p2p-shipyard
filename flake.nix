@@ -290,6 +290,8 @@
             export GRADLE_OPTS="-Dorg.gradle.project.android.aapt2FromMavenOverride=${pkgs.aapt}/bin/aapt2";
 
             export NDK_HOME=$ANDROID_SDK_ROOT/ndk-bundle
+            
+            chmod 755 $ANDROID_SDK_ROOT
           '';
         };
 
