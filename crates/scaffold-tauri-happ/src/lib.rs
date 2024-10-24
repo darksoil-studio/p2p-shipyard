@@ -141,7 +141,7 @@ pub fn scaffold_tauri_happ(
     };
 
     // - In package.json
-    // - Add "start", "network", "local-services", "build:zomes"
+    // - Add "start", "network", "build:zomes"
     let root_package_json_path = PathBuf::from("package.json");
     map_file(
         &mut file_tree,
@@ -183,26 +183,19 @@ pub fn scaffold_tauri_happ(
             let package_json_content = add_npm_script_to_package(
                 &(root_package_json_path.clone(), package_json_content),
                 &String::from("network"),
-                &format!("{} && BOOTSTRAP_PORT=$(port) SIGNAL_PORT=$(port) INTERNAL_IP=$(internal-ip --ipv4) concurrently -k \"{}\" \"UI_PORT=1420 {}\" \"{}\"", 
+                &format!("{} && concurrently -k \"UI_PORT=1420 {}\" \"{}\"", 
                     
                     package_manager.run_script_command(String::from("build:happ"), None),
-                    package_manager.run_script_command(String::from("local-services"), None ),
                     package_manager.run_script_command(String::from("start"), Some(ui_package.clone())),
                     package_manager.run_script_command(String::from("launch"), None)
                 ),
-            )?;
-            let package_json_content = add_npm_script_to_package(
-                &(root_package_json_path.clone(), package_json_content),
-                &String::from("local-services"),
-                &format!("hc run-local-services --bootstrap-interface $INTERNAL_IP --bootstrap-port $BOOTSTRAP_PORT --signal-interfaces $INTERNAL_IP --signal-port $SIGNAL_PORT"),
             )?;
 
             let package_json_content = add_npm_script_to_package(
                 &(root_package_json_path.clone(), package_json_content),
                 &String::from("network:android"),
-                &format!("{} && BOOTSTRAP_PORT=$(port) SIGNAL_PORT=$(port) INTERNAL_IP=$(internal-ip --ipv4) concurrently -k \"{}\" \"UI_PORT=1420 {}\" \"{}\" \"{}\"",
+                &format!("{} && concurrently -k \"UI_PORT=1420 {}\" \"{}\" \"{}\"",
                     package_manager.run_script_command(String::from("build:happ"), None),
-                    package_manager.run_script_command(String::from("local-services"), None),
                     package_manager.run_script_command(String::from("start"), Some(ui_package.clone())),
                     package_manager.run_script_command(String::from("tauri dev"), None),
                     package_manager.run_script_command(String::from("tauri android dev"), None),
@@ -387,10 +380,9 @@ mod tests {
   "scripts": {
     "build:happ": "npm run build:zomes && hc app pack workdir2",
     "start": "AGENTS=2 npm run network",
-    "network": "npm run build:happ && BOOTSTRAP_PORT=$(port) SIGNAL_PORT=$(port) INTERNAL_IP=$(internal-ip --ipv4) concurrently -k \"npm run local-services\" \"UI_PORT=1420 npm run -w package1 start\" \"npm run launch\"",
-    "local-services": "hc run-local-services --bootstrap-interface $INTERNAL_IP --bootstrap-port $BOOTSTRAP_PORT --signal-interfaces $INTERNAL_IP --signal-port $SIGNAL_PORT",
-    "network:android": "npm run build:happ && BOOTSTRAP_PORT=$(port) SIGNAL_PORT=$(port) INTERNAL_IP=$(internal-ip --ipv4) concurrently -k \"npm run local-services\" \"UI_PORT=1420 npm run -w package1 start\" \"npm run tauri dev\" \"npm run tauri android dev\"",
-    "build:zomes": "CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown --workspace --exclude myhapp",
+    "network": "npm run build:happ && concurrently -k \"UI_PORT=1420 npm run -w package1 start\" \"npm run launch\"",
+    "network:android": "npm run build:happ && concurrently -k \"UI_PORT=1420 npm run -w package1 start\" \"npm run tauri dev\" \"npm run tauri android dev\"",
+    "build:zomes": "CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown --workspace --exclude myhapp-tauri",
     "launch": "concurrently-repeat \"npm run tauri dev --no-watch\" $AGENTS",
     "tauri": "tauri"
   },
