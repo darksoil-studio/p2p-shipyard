@@ -16,7 +16,9 @@ use holochain::{
     conductor::ConductorHandle,
     prelude::{AppBundle, NetworkSeed},
 };
-use holochain_client::{AdminWebsocket, AgentPubKey, AppInfo, AppWebsocket, InstalledAppId};
+use holochain_client::{
+    AdminWebsocket, AgentPubKey, AppInfo, AppWebsocket, InstalledAppId, WebsocketConfig,
+};
 use holochain_types::{
     app::{ExistingCellsMap, MemproofMap},
     web_app::WebAppBundle,
@@ -209,10 +211,15 @@ impl<R: Runtime> HolochainPlugin<R> {
 
     /// Builds an `AdminWebsocket` ready to use
     pub async fn admin_websocket(&self) -> crate::Result<AdminWebsocket> {
-        let admin_ws =
-            AdminWebsocket::connect(format!("localhost:{}", self.holochain_runtime.admin_port))
-                .await
-                .map_err(|err| crate::Error::WebsocketConnectionError(format!("{err:?}")))?;
+        let mut config = WebsocketConfig::CLIENT_DEFAULT;
+        config.default_request_timeout = std::time::Duration::new(60 * 5, 0);
+
+        let admin_ws = AdminWebsocket::connect_with_config(
+            format!("localhost:{}", self.holochain_runtime.admin_port),
+            Arc::new(config),
+        )
+        .await
+        .map_err(|err| crate::Error::WebsocketConnectionError(format!("{err:?}")))?;
         Ok(admin_ws)
     }
 
