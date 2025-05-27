@@ -1,0 +1,17 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+}
+
+.main .name {
+  max-width: 800px !important;
+}
+
+.main .text {
+  max-width: 850px !important;
+}
+
+.main .tagline {
+  max-width: 850px !important;
+}

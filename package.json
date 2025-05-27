@@ -1,0 +1,14 @@
+{
+  "name": "p2p-shipyard-dev",
+  "version": "0.0.0",
+  "author": "guillem@darksoil.studio",
+  "description": "",
+  "scripts": {
+    "start": "cd examples/end-user-happ && nix develop --command bash -c \"npm run tauri dev\"",
+    "android:start": "cd examples/end-user-happ && nix develop .#androidDev --command bash -c \"npm run tauri android dev\""
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "tslib": "^2.7.0"
+  }
+}
