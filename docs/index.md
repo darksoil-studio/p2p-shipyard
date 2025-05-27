@@ -4,29 +4,21 @@ layout: home
 
 hero:
   name: "p2p Shipyard"
-  text: ship cross-platform p2p apps
-  tagline: Combining Tauri and p2p frameworks to ship end-user apps to Android, Linux, MacOS and Windows
+  text: peer-to-peer apps made easy
+  tagline: 
   actions:
     - theme: brand
-      text: Contribute to making it Open-Source!
-      link: /license/license
-    - theme: alt
-      text: Create an end-user hApp
-      link: /documentation/how-to-create-an-end-user-happ
-    - theme: alt
-      text: Create a holochain runtime
-      link: /documentation/how-to-create-a-holochain-runtime
+      text: Start building!
+      link: /guides/getting-started
 
 features:
-  - title: Contribute to make it open-source!
-    details: p2p-shipyard is Source-Available. We are raising funds to make it Open Source.
-    link: /license/license
-  - title: Supports Holochain
-    details: Start building cross-platform and mobile ready hApps.
-  - title: Experimental mobile support
-    details: Android has experimental support (see FAQs for more details), iOS support coming soon.
-    link: /documentation/faqs
-  - title: Integrate with all the other plugins in the Tauri ecosystem
-    details: tauri-plugin-holochain is just another tauri plugin.
+  - title: 🚧 Open beta software 🚧
+    details: p2p Shipyard is in beta.<br> Use it for free while we gather feedback!
+  - title: All the tools that you need
+    details: Pluggable modules make you go lightning fast!
+  - title: Use our services to make your app just work
+    details: Connect to common centralized services like email, push-notifications or file storage.
+  - title: Ship with tauri
+    details: Cross-platform support for desktop and mobile out of the box.
 ---
 

@@ -3,77 +3,86 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "p2p Shipyard",
-  description: "Build cross-platform holochain apps and runtimes",
+  description: "Build, ship and maintain",
   base: "/p2p-shipyard",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
-        text: "Documentation",
-        link: "/documentation/how-to-create-an-end-user-happ",
+        text: "Guides",
+        link: "/guides/getting-started",
       },
-      { text: "License", link: "/license/license" },
+      {
+        text: "Blog",
+        link: "/blog/how-to-create-an-end-user-happ",
+      },
     ],
 
     sidebar: {
-      "/documentation/": [
+      "/guides/": [
         {
-          text: "Guides",
+          text: "Build",
           items: [
             {
-              text: "How to create an end-user hApp",
-              link: "/documentation/how-to-create-an-end-user-happ",
+              text: "Getting Started",
+              link: "/guides/getting-started",
             },
             {
-              text: "How to create a holochain runtime",
-              link: "/documentation/how-to-create-a-holochain-runtime",
-            },
-            {
-              text: "Getting to know Tauri",
-              link: "/documentation/getting-to-know-tauri",
-            },
-            {
-              text: "Desktop",
+              text: "Modules",
               items: [
                 {
-                  text: "Shipping",
-                  link: "/documentation/desktop/shipping",
-                },
-              ],
-            },
-            {
-              text: "Android",
-              items: [
-                {
-                  text: "Project Setup",
-                  link: "/documentation/android/project-setup",
+                  text: "Profiles",
+                  link: "https://darksoil.studio/profiles-zome",
                 },
                 {
-                  text: "Device Setup",
-                  link: "/documentation/android/device-setup",
+                  text: "Linked Devices",
+                  link: "https://darksoil.studio/-zome",
                 },
                 {
-                  text: "Developing",
-                  link: "/documentation/android/developing",
+                  text: "File Storage",
+                  link: "https://darksoil.studio/file-storage",
                 },
                 {
-                  text: "Shipping",
-                  link: "/documentation/android/shipping",
+                  text: "Friends",
+                  link: "https://darksoil.studio/friends-zome",
+                },
+                {
+                  text: "Messenger",
+                  link: "https://darksoil.studio/messenger-zome",
+                },
+                {
+                  text: "Roles",
+                  link: "https://darksoil.studio/roles-zome",
+                },
+                {
+                  text: "Notifications",
+                  link: "https://darksoil.studio/notifications-zome",
+                },
+                {
+                  text: "Collaborative Sessions",
+                  link: "https://darksoil.studio/collaborative-sessions",
+                },
+                {
+                  text: "Notes",
+                  link: "https://darksoil.studio/notes-zome",
+                },
+                {
+                  text: "Comments",
+                  link: "https://darksoil.studio/comments-zome",
+                },
+                {
+                  text: "Tags",
+                  link: "https://darksoil.studio/tags-zome",
+                },
+                {
+                  text: "Chain of Custody",
+                  link: "https://darksoil.studio/chain-of-custody-zome",
                 },
               ],
             },
           ],
         },
-        {
-          text: "FAQs",
-          link: "/documentation/faqs",
-        },
-        {
-          text: "Troubleshooting",
-          link: "/documentation/troubleshooting",
-        },
       ],
-      "/license": [],
     },
 
     socialLinks: [
