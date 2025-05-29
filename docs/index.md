@@ -4,21 +4,27 @@ layout: home
 
 hero:
   name: "p2p Shipyard"
-  text: peer-to-peer apps made easy
-  tagline: 
+  text: peer-to-peer made easy
+  tagline: Batteries included developer toolkit for p2p apps.
+  image:
+    src: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff39196ef-fdf7-470a-8092-b0dc07d210d6_1600x914.jpeg
+    alt: p2p Shipyard
   actions:
     - theme: brand
-      text: Start building!
-      link: /guides/getting-started
+      text: Start building
+      link: /guides/creating-an-app
+    - theme: alt
+      text: Learn more
+      link: /guides/overview
 
 features:
-  - title: 🚧 Open beta software 🚧
-    details: p2p Shipyard is in beta.<br> Use it for free while we gather feedback!
-  - title: All the tools that you need
-    details: Pluggable modules make you go lightning fast!
-  - title: Use our services to make your app just work
-    details: Connect to common centralized services like email, push-notifications or file storage.
-  - title: Ship with tauri
-    details: Cross-platform support for desktop and mobile out of the box.
+  - title: 🚧 Open Beta 🚧
+    details: p2p Shipyard is in beta. Use it for free while we collect feedback!
+  - title: Plug and play modules
+    details: Don't reinvent the wheel, focus on what makes your app unique.
+  - title: Connect to web 2 services
+    details: Enable email, push-notifications or payments in your app.
+  - title: Cross-platform support
+    details: Ship with tauri to distribute to your users on desktop or mobile.
 ---
 

@@ -6,6 +6,10 @@
     nixpkgs.follows = "holonix/nixpkgs";
     rust-overlay.follows = "holonix/rust-overlay";
     crane.follows = "holonix/crane";
+
+    scaffolding.url = "github:darksoil-studio/scaffolding/main-0.5";
+    tauri-plugin-holochain.url =
+      "github:darksoil-studio/tauri-plugin-holochain/main-0.5";
   };
 
   nixConfig = {
@@ -22,7 +26,8 @@
   outputs = inputs@{ ... }:
     inputs.holonix.inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = builtins.attrNames inputs.holonix.devShells;
-      perSystem = { inputs', config, self', pkgs, system, lib, ... }: rec {
+      perSystem = { inputs', config, self', pkgs, system, lib, ... }: {
+
         devShells.default = pkgs.mkShell { packages = [ pkgs.pnpm ]; };
       };
     };

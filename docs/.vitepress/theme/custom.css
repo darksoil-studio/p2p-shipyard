@@ -15,3 +15,17 @@
 .main .tagline {
   max-width: 850px !important;
 }
+
+.VPHero .VPImage {
+  max-width: 580px;
+  border-radius: 8px;
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-container {
+    transform: translate(0, 0);
+  }
+  .VPHome .main .text {
+    font-size: 48px;
+  }
+}

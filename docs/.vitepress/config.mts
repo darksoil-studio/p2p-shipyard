@@ -3,32 +3,42 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "p2p Shipyard",
-  description: "Build, ship and maintain",
+  description: "peer-to-peer apps made easy",
   base: "/p2p-shipyard",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
         text: "Guides",
-        link: "/guides/getting-started",
+        link: "/guides/overview",
       },
-      {
-        text: "Blog",
-        link: "/blog/how-to-create-an-end-user-happ",
-      },
+      // {
+      //   text: "Blog",
+      //   link: "/blog/how-to-create-an-end-user-happ",
+      // },
     ],
 
     sidebar: {
       "/guides/": [
         {
+          text: "Overview",
+          link: "/guides/overview",
+        },
+        {
           text: "Build",
           items: [
             {
-              text: "Getting Started",
-              link: "/guides/getting-started",
+              text: "Creating an app",
+              link: "/guides/creating-an-app",
             },
             {
-              text: "Modules",
+              text: "Designing the app",
+              link: "/guides/designing-your-app",
+            },
+            {
+              text: "Importing modules",
+              // collapsed: true,
+              link: "/guides/importing-modules",
               items: [
                 {
                   text: "Profiles",
@@ -77,6 +87,46 @@ export default defineConfig({
                 {
                   text: "Chain of Custody",
                   link: "https://darksoil.studio/chain-of-custody-zome",
+                },
+                {
+                  text: "Private Events Engine",
+                  link: "https://darksoil.studio/private-event-sourcing-zome",
+                },
+                {
+                  text: "Membrane Invitations",
+                  link: "https://darksoil.studio/membrane-invitations-zome",
+                },
+              ],
+            },
+            {
+              text: "Building custom features",
+              link: "/guides/building-custom-features",
+            },
+            {
+              text: "Distribution",
+              link: "/guides/distribution",
+              collapsed: true,
+              items: [
+                {
+                  text: "Android",
+                  items: [
+                    {
+                      text: "Project Setup",
+                      link: "/guides/android/project-setup",
+                    },
+                    {
+                      text: "Device Setup",
+                      link: "/guides/android/device-setup",
+                    },
+                    {
+                      text: "Developing",
+                      link: "/guides/android/developing",
+                    },
+                    {
+                      text: "Shipping",
+                      link: "/guides/android/shipping",
+                    },
+                  ],
                 },
               ],
             },
