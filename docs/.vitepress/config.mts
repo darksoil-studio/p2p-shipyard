@@ -46,7 +46,7 @@ export default defineConfig({
                 },
                 {
                   text: "Linked Devices",
-                  link: "https://darksoil.studio/-zome",
+                  link: "https://darksoil.studio/linked-devices-zome",
                 },
                 {
                   text: "File Storage",
