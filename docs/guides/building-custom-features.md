@@ -66,6 +66,9 @@ pnpm start
 
 Have fun coding!
 
+>[!NOTE] Holochain Developer Training
+> Curious to learn how to build holochain apps? Check out our [Holochain Developer Training](https://darksoil.studio/hc-dev-training/)!
+
 ---
 
 When your app is ready, come back to [distribution](/guides/distribution) to learn how to ship it to your users.

@@ -14,9 +14,6 @@ If you want to learn more about how holochain works, check out this video:
 
 <iframe width="688" height="400" src="https://www.youtube.com/embed/-Q6uursAggY?si=Mknt4RC7Fw9HwIXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
->[!NOTE] Holochain Developer Training
-> Curious to learn how to build holochain apps? Check out our [Holochain Developer Training](https://darksoil.studio/hc-dev-training/)!
-
 ### Design your DNAs
 
 With this in mind, **design which DNAs your app will have**.
