@@ -11,8 +11,8 @@ hero:
     alt: p2p Shipyard
   actions:
     - theme: brand
-      text: Start building
-      link: /guides/creating-an-app
+      text: Join our beta program
+      link: https://docs.google.com/forms/d/e/1FAIpQLSeUdBm3zqBMB2OhtLQPGCAbq6AoNprPwdrULPTGFMHh_pKBbw/viewform
     - theme: alt
       text: Learn more
       link: /guides/overview
