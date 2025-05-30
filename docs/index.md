@@ -18,8 +18,8 @@ hero:
       link: /guides/overview
 
 features:
-  - title: 🚧 Open Beta 🚧
-    details: p2p Shipyard is in beta. Use it for free while we collect feedback!
+  - title: 🚧 Beta Software 🚧
+    details: p2p Shipyard is in beta. Contact us if you want to be part of our beta program!
   - title: Plug and play modules
     details: Don't reinvent the wheel, focus on what makes your app unique.
   - title: Connect to web 2 services
