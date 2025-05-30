@@ -10,7 +10,7 @@ But! Building peer-to-peer apps can be really hard. Having a distributed network
 
 Furthermore, there aren't a lot of resources out there to help developers have a smooth building experience.
 
-This is why built p2p Shipyard. **It's an all-included development toolkit for building peer-to-peer apps**.
+This is why built p2p Shipyard. **It's an all-included development suite for building peer-to-peer apps**.
 
 ## Tech stack
 
