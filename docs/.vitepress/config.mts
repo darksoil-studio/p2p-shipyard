@@ -36,7 +36,7 @@ export default defineConfig({
               link: "/guides/designing-your-app",
             },
             {
-              text: "Importing modules",
+              text: "Modules",
               // collapsed: true,
               link: "/guides/importing-modules",
               items: [
@@ -99,11 +99,27 @@ export default defineConfig({
               ],
             },
             {
+              text: "Services",
+              // collapsed: true,
+              // link: "/guides/services",
+              items: [
+                {
+                  text: "🚧 Push Notifications 🚧",
+                },
+                {
+                  text: "🚧 Email 🚧",
+                },
+                {
+                  text: "🚧 Stripe 🚧",
+                },
+              ],
+            },
+            {
               text: "Building custom features",
               link: "/guides/building-custom-features",
             },
             {
-              text: "Distribution",
+              text: "Distributing",
               link: "/guides/distribution",
               collapsed: true,
               items: [
