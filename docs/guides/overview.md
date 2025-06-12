@@ -22,7 +22,7 @@ To that end, these are the tools that we chose:
 
 - We use [tauri](https://tauri.app) to distribute apps for both desktop and mobile targets.
 
-- We use web technologies like javascript, HTML and to build the frontend client, and we use rust to build the backend of apps.
+- We use web technologies like javascript and HTML to build the frontend client, and we use rust to build the backend of apps.
 
 ## Building
 
