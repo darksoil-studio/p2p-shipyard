@@ -36,7 +36,7 @@ export default defineConfig({
               link: "/guides/designing-your-app",
             },
             {
-              text: "Modules",
+              text: "Importing Modules",
               // collapsed: true,
               link: "/guides/importing-modules",
               items: [
@@ -99,7 +99,7 @@ export default defineConfig({
               ],
             },
             {
-              text: "Services",
+              text: "Connecting to Services",
               // collapsed: true,
               // link: "/guides/services",
               items: [
@@ -111,6 +111,9 @@ export default defineConfig({
                 },
                 {
                   text: "🚧 Stripe 🚧",
+                },
+                {
+                  text: "🚧 Locker 🚧",
                 },
               ],
             },
