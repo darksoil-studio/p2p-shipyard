@@ -18,11 +18,13 @@ Our goal is to create performant, resilient and flexible peer-to-peer apps, that
 
 To that end, these are the tools that we chose:
 
-- We use [holochain](https://developer.holochain.org) as our underlying protocol to build peer-to-peer apps.
+- [holochain](https://developer.holochain.org) as the underlying distributed protocol to build peer-to-peer apps.
 
-- We use [tauri](https://tauri.app) to distribute apps for both desktop and mobile targets.
+- [tauri](https://tauri.app) to distribute apps for both desktop and mobile targets.
 
-- We use web technologies like javascript and HTML to build the frontend client, and we use rust to build the backend of apps.
+- Web technologies like javascript and HTML to build the frontend client.
+
+- Rust to build the backend of apps.
 
 ## Building
 
