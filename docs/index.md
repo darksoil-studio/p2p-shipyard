@@ -18,13 +18,13 @@ hero:
       link: /guides/overview
 
 features:
-  - title: 🚧 Beta Software 🚧
-    details: p2p Shipyard is in beta. Contact us if you want to be part of our beta program!
   - title: Plug and play modules
     details: Don't reinvent the wheel, focus on what makes your app unique.
   - title: Connect to web 2 services
     details: Enable email, push-notifications or payments in your app.
   - title: Cross-platform support
     details: Ship with tauri to distribute to your users on desktop or mobile.
+  - title: 🚧 Beta Software 🚧
+    details: p2p Shipyard is in beta. Contact us if you want to be part of our beta program!
 ---
 
