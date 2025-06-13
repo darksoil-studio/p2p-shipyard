@@ -36,7 +36,7 @@ nix run github:darksoil-studio/scaffolding#hc-scaffold-happ -- web-app
 2. Enter the newly created folder, and add support for cross-platform binaries with:
 
 ```bash
-nix run github:darksoil-studio/p2p-shipyard#scaffold-tauri-happ
+nix run github:darksoil-studio/tauri-plugin-holochain#scaffold-tauri-happ
 ```
 
 ---
