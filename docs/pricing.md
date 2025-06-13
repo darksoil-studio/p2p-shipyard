@@ -3,7 +3,7 @@
 We have a single tier license that gives you access to all the tools from the p2p Shipyard, including:
 
 - [tauri-plugin-holochain](https://github.com/darksoil-studio/tauri-plugin-holochain).
-- All the [code modules](http://localhost:5173/p2p-shipyard/guides/importing-modules.html).
+- All the [code modules](/guides/importing-modules).
 - Access to all the services (coming soon).
 
 Feel free to contact us at hello@darksoil.studio for questions and clarifications.
