@@ -12,10 +12,18 @@ export default defineConfig({
         text: "Guides",
         link: "/guides/overview",
       },
-      // {
-      //   text: "Blog",
-      //   link: "/blog/how-to-create-an-end-user-happ",
-      // },
+      {
+        text: "Roadmap",
+        link: "/roadmap.md",
+      },
+      {
+        text: "🚧 Pricing 🚧",
+        link: "/blog/how-to-create-an-end-user-happ",
+      },
+      {
+        text: "🚧 Blog 🚧",
+        link: "/blog/how-to-create-an-end-user-happ",
+      },
     ],
 
     sidebar: {
@@ -105,15 +113,6 @@ export default defineConfig({
               items: [
                 {
                   text: "🚧 Push Notifications 🚧",
-                },
-                {
-                  text: "🚧 Email 🚧",
-                },
-                {
-                  text: "🚧 Stripe 🚧",
-                },
-                {
-                  text: "🚧 Locker 🚧",
                 },
               ],
             },
