@@ -11,8 +11,8 @@ hero:
     alt: p2p Shipyard
   actions:
     - theme: brand
-      text: Join our beta program
-      link: https://docs.google.com/forms/d/e/1FAIpQLSeUdBm3zqBMB2OhtLQPGCAbq6AoNprPwdrULPTGFMHh_pKBbw/viewform
+      text: Create a p2p app
+      link: /guides/creating-an-app
     - theme: alt
       text: Learn more
       link: /guides/overview
@@ -25,6 +25,7 @@ features:
   - title: Cross-platform support
     details: Ship with tauri to distribute to your users on desktop or mobile.
   - title: 🚧 Beta Software 🚧
-    details: p2p Shipyard is in beta. Contact us if you want to be part of our beta program!
+    details: p2p Shipyard is in beta. We welcome feedback!
+    link: https://github.com/darksoil-studio/p2p-shipyard/issues
 ---
 
