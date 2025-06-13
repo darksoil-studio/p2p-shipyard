@@ -1,6 +1,6 @@
 # Designing your app
 
-Holochain apps can include multiple [DNAs](https://developer.holochain.org/build/dnas/). When instantiated, each DNA participates in a different network.
+Holochain apps can include multiple [DNAs](https://developer.holochain.org/build/dnas/). DNAs define the rules of the network: which actions are allowed, and which ones are declared invalid. When instantiated, each DNA participates in a different network.
 
 Holochain networks can be:
 
