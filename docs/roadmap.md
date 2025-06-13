@@ -14,8 +14,12 @@ The p2p Shipyard Console will provide a simple to web console interface for p2p 
 
 ### Supported Operating Systems
 
+- **Android**: ✅	
 - **iOS**: support coming soon.
-- **Volla Cloud**: when in Volla OS devices, the app will use the Volla Cloud to enhance its capabilities.
+- **Volla Cloud**: coming soon. When in Volla OS devices, the app will use the Volla Cloud to enhance its capabilities.
+- **MacOS**: ✅	
+- **Windows**: ✅
+- **Linux**: ✅	
 
 ## Get In Touch!
 
