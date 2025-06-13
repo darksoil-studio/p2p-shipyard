@@ -14,15 +14,15 @@ export default defineConfig({
       },
       {
         text: "Roadmap",
-        link: "/roadmap.md",
+        link: "/roadmap",
       },
       {
-        text: "🚧 Pricing 🚧",
-        link: "/blog/how-to-create-an-end-user-happ",
+        text: "Pricing",
+        link: "/pricing",
       },
       {
         text: "🚧 Blog 🚧",
-        link: "/blog/how-to-create-an-end-user-happ",
+        link: "/blog",
       },
     ],
 
@@ -160,4 +160,14 @@ export default defineConfig({
       },
     ],
   },
+
+  head: [
+    [
+      "script",
+      {
+        async: "true",
+        src: "https://js.stripe.com/v3/buy-button.js",
+      },
+    ],
+  ],
 });
