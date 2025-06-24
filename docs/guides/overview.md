@@ -18,13 +18,14 @@ Our goal is to create performant, resilient and flexible peer-to-peer apps, that
 
 To that end, these are the tools that we chose:
 
-- [holochain](https://developer.holochain.org) as the underlying distributed protocol to build peer-to-peer apps.
+- [holochain](https://developer.holochain.org) as the distributed data verification protocol to build peer-to-peer apps.
+
+- [iroh](https://iroh.computer) as the underlying network transport to send peer-to-peer messages.
 
 - [tauri](https://tauri.app) to distribute apps for both desktop and mobile targets.
 
-- Web technologies like javascript and HTML to build the frontend client.
+- CRDT based algorithms like [automerge](https://automerge.org) to build real-time collaborative modules.
 
-- Rust to build the backend of apps.
 
 ## Building
 
