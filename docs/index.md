@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "p2p Shipyard"
   text: peer-to-peer made easy
-  tagline: Batteries included developer suite for p2p apps.
+  tagline: Full-stack developer suite for p2p apps
   image:
     src: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff39196ef-fdf7-470a-8092-b0dc07d210d6_1600x914.jpeg
     alt: p2p Shipyard
