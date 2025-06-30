@@ -21,7 +21,7 @@ features:
   - title: Plug and play modules
     details: Don't reinvent the wheel, focus on what makes your app unique.
     link: /guides/importing-modules
-  - title: Connect to web 2 services
+  - title: Web 2 services for Web 3
     details: Enable email, push-notifications or payments in your app.
   - title: Generate customizable code
     details: Scaffold backend functions and reactive CRUD UI elements.
