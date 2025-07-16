@@ -41,6 +41,9 @@
 
     safehold.url = "github:darksoil-studio/safehold/main-0.5";
     safehold.inputs.holochain-utils.follows = "holochain-utils";
+
+    always-online-nodes.url = "github:darksoil-studio/always-online-nodes/main";
+    always-online-nodes.inputs.holochain-utils.follows = "holochain-utils";
   };
 
   nixConfig = {
@@ -74,6 +77,7 @@
           // inputs'.file-storage.packages // inputs'.profiles-zome.packages
           // inputs'.roles-zome.packages // inputs'.friends-zome.packages
           // inputs'.messenger-zome.packages
+          // inputs'.always-online-nodes.packages
           // inputs'.push-notifications-service.packages
           // inputs'.safehold.packages // { };
       };
