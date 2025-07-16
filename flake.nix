@@ -64,13 +64,12 @@
     } {
 
       flake.flakeModules = {
-        builders = inputs.holochain-nix-builders.outputs.flakeModules.builders;
-        dependencies =
-          inputs.holochain-nix-builders.outputs.flakeModules.dependencies;
+        builders = inputs.holochain-utils.outputs.flakeModules.builders;
+        dependencies = inputs.holochain-utils.outputs.flakeModules.dependencies;
       };
       imports = [
-        inputs.holochain-nix-builders.outputs.flakeModules.builders
-        inputs.holochain-nix-builders.outputs.flakeModules.dependencies
+        inputs.holochain-utils.outputs.flakeModules.builders
+        inputs.holochain-utils.outputs.flakeModules.dependencies
       ];
 
       systems =
