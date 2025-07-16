@@ -83,15 +83,17 @@
 
         dependencies.holochain = inputs'.holochain-utils.dependencies.holochain;
 
-        devShells.synchronized-pnpm =
-          inputs'.holochain-utils.devShells.synchronized-pnpm;
+        devShells = inputs'.holochain-utils.devShells // {
+          synchronized-pnpm =
+            inputs'.holochain-utils.devShells.synchronized-pnpm;
 
-        devShells.default = pkgs.mkShell {
-          inputsFrom = [ inputs'.holochain-utils.devShells.default ];
-          packages = [ pkgs.pnpm ];
+          default = pkgs.mkShell {
+            inputsFrom = [ inputs'.holochain-utils.devShells.default ];
+            packages = [ pkgs.pnpm ];
+          };
+
+          holochainDev = inputs'.holochain-utils.devShells.holochainDev;
         };
-
-        devShells.holochainDev = inputs'.holochain-utils.devShells.holochainDev;
 
         packages = inputs'.holochain-utils.packages
           // inputs'.linked-devices-zome.packages
