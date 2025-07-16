@@ -83,17 +83,19 @@
 
         dependencies.holochain = inputs'.holochain-utils.dependencies.holochain;
 
-        devShells = inputs'.holochain-utils.devShells // {
-          synchronized-pnpm =
-            inputs'.holochain-utils.devShells.synchronized-pnpm;
+        devShells =
+          inputs.holochain-utils.inputs.tauri-plugin-holochain.outputs.devShells.${system}
+          // {
+            synchronized-pnpm =
+              inputs'.holochain-utils.devShells.synchronized-pnpm;
 
-          default = pkgs.mkShell {
-            inputsFrom = [ inputs'.holochain-utils.devShells.default ];
-            packages = [ pkgs.pnpm ];
+            default = pkgs.mkShell {
+              inputsFrom = [ inputs'.holochain-utils.devShells.default ];
+              packages = [ pkgs.pnpm ];
+            };
+
+            holochainDev = inputs'.holochain-utils.devShells.holochainDev;
           };
-
-          holochainDev = inputs'.holochain-utils.devShells.holochainDev;
-        };
 
         packages = inputs'.holochain-utils.packages
           // inputs'.linked-devices-zome.packages
