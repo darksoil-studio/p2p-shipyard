@@ -12,26 +12,21 @@
     file-storage.url = "github:darksoil-studio/file-storage/main-0.5";
     file-storage.inputs.holochain-utils.follows = "holochain-utils";
 
-    profiles-zome.url = "github:darksoil-studio/friends-zome/main-0.5";
+    profiles-zome.url = "github:darksoil-studio/profiles-zome/main-0.5";
     profiles-zome.inputs.holochain-utils.follows = "holochain-utils";
     profiles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
     notifications-zome.url = "github:darksoil-studio/friends-zome/main-0.5";
     notifications-zome.inputs.holochain-utils.follows = "holochain-utils";
-    notifications-zome.inputs.profiles-zome.follows = "profiles-zome";
     notifications-zome.inputs.linked-devices-zome.follows =
       "linked-devices-zome";
 
     roles-zome.url = "github:darksoil-studio/friends-zome/main-0.5";
     roles-zome.inputs.holochain-utils.follows = "holochain-utils";
-    roles-zome.inputs.profiles-zome.follows = "profiles-zome";
-    roles-zome.inputs.notifications-zome.follows = "notifications-zome";
     roles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
     friends-zome.url = "github:darksoil-studio/friends-zome/main-0.5";
     friends-zome.inputs.holochain-utils.follows = "holochain-utils";
-    friends-zome.inputs.profiles-zome.follows = "profiles-zome";
-    friends-zome.inputs.notifications-zome.follows = "notifications-zome";
     friends-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
     messenger-zome.url = "github:darksoil-studio/messenger-zome/main-0.5";
@@ -76,9 +71,9 @@
 
         packages = inputs'.holochain-utils.packages
           // inputs'.linked-devices-zome.packages
-          // inputs'.file-storage-zome.packages
-          // inputs'.profiles-zome.packages // inputs'.roles-zome.packages
-          // inputs'.friends-zome.packages // inputs'.messenger-zome.packages
+          // inputs'.file-storage.packages // inputs'.profiles-zome.packages
+          // inputs'.roles-zome.packages // inputs'.friends-zome.packages
+          // inputs'.messenger-zome.packages
           // inputs'.push-notifications-service.packages
           // inputs'.safehold.packages // { };
       };
