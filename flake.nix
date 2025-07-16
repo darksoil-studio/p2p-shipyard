@@ -62,9 +62,30 @@
     inputs.holochain-utils.inputs.holonix.inputs.flake-parts.lib.mkFlake {
       inherit inputs;
     } {
+
+      flake.flakeModules = {
+        builders = inputs.holochain-nix-builders.outputs.flakeModules.builders;
+        dependencies =
+          inputs.holochain-nix-builders.outputs.flakeModules.dependencies;
+      };
+      imports = [
+        inputs.holochain-nix-builders.outputs.flakeModules.builders
+        inputs.holochain-nix-builders.outputs.flakeModules.dependencies
+      ];
+
       systems =
         builtins.attrNames inputs.holochain-utils.inputs.holonix.devShells;
       perSystem = { inputs', config, self', pkgs, system, lib, ... }: {
+
+        builders.rustZome = inputs'.holochain-utils.builders.rustZome;
+        builders.dna = inputs'.holochain-utils.builders.dna;
+        builders.happ = inputs'.holochain-utils.builders.happ;
+        builders.webhapp = inputs'.holochain-utils.builders.webhapp;
+
+        dependencies.holochain = inputs'.holochain-utils.dependencies.holochain;
+
+        devShells.synchronized-pnpm =
+          inputs'.holochain-utils.devShells.synchronized-pnpm;
 
         devShells.default = pkgs.mkShell {
           inputsFrom = [ inputs'.holochain-utils.devShells.default ];
