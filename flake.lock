@@ -709,11 +709,11 @@
         "tauri-plugin-holochain": "tauri-plugin-holochain"
       },
       "locked": {
-        "lastModified": 1752663961,
-        "narHash": "sha256-4JeT25EJTZNvpZ17fJ/KNf4yePfGsw38tNbo2a++cxc=",
+        "lastModified": 1752667835,
+        "narHash": "sha256-RFUkOn0RU+3O6djN04S095fx4GaOE83+vCoip9UQq5s=",
         "owner": "darksoil-studio",
         "repo": "holochain-utils",
-        "rev": "9e141445c22fe57519c9cd75f068e91c633a65c8",
+        "rev": "d6e7928c154a4888ff42dfa5bbea3246fe88229a",
         "type": "github"
       },
       "original": {
