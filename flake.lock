@@ -2429,6 +2429,11 @@
       "inputs": {
         "always-online-nodes": "always-online-nodes",
         "file-storage": "file-storage",
+        "flake-parts": [
+          "holochain-utils",
+          "holonix",
+          "flake-parts"
+        ],
         "friends-zome": "friends-zome",
         "holochain-utils": "holochain-utils",
         "linked-devices-zome": "linked-devices-zome_2",
