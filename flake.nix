@@ -5,6 +5,7 @@
     holochain-utils.url = "github:darksoil-studio/holochain-utils/main-0.5";
     nixpkgs.follows = "holochain-utils/nixpkgs";
     flake-parts.follows = "holochain-utils/holonix/flake-parts";
+    crane.follows = "holochain-utils/crane";
 
     linked-devices-zome.url =
       "github:darksoil-studio/linked-devices-zome/main-0.5";
