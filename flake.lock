@@ -17,11 +17,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1752667096,
-        "narHash": "sha256-sdpMxg3U24DpweoGvBvsMaiVOrhbth+fNVKUtKNKI/E=",
+        "lastModified": 1752776515,
+        "narHash": "sha256-5pEqwADYOZ/S36sIavzcwgsjppW3Mejz9DXTPqzMgHI=",
         "owner": "darksoil-studio",
         "repo": "always-online-nodes",
-        "rev": "7f1d85c88bff94b43548efb665a5fd0c68dd8c59",
+        "rev": "a26a32d7c0c265b44ee3796c5ba8f0b7a924e000",
         "type": "github"
       },
       "original": {
