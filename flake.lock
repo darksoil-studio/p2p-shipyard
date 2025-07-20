@@ -327,11 +327,11 @@
         "private-event-sourcing-zome": "private-event-sourcing-zome"
       },
       "locked": {
-        "lastModified": 1753021936,
-        "narHash": "sha256-Rr0s0g5a573Abgae9VgB4vER1IJ2O5ppGgSG/AhZtFI=",
+        "lastModified": 1753025262,
+        "narHash": "sha256-nZPlPr4NrC/FbmzyMlfmSkLxgIzn9cNDD5wQmIvG1x0=",
         "owner": "darksoil-studio",
         "repo": "friends-zome",
-        "rev": "f790b9265fc0aeb1f96f7e8e858c417bf2466beb",
+        "rev": "32244bc8e1b2650b154bad6032eb74db50e4075b",
         "type": "github"
       },
       "original": {
@@ -1406,11 +1406,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1753021518,
-        "narHash": "sha256-y5ke0xf0PVFzItGEOQW6pXu4MDouGJ5G9cRrNeHIqnA=",
+        "lastModified": 1753023624,
+        "narHash": "sha256-5JJCCNhnYEy5KtchaD1dqbNJSaYwjUh8cjnLSiKFjoc=",
         "owner": "darksoil-studio",
         "repo": "messenger-zome",
-        "rev": "4e964aa06a41f029fbd30734e1f289e1d46b8d12",
+        "rev": "333965bcddd73a575cae6b01fbfb2f85b258afcf",
         "type": "github"
       },
       "original": {
