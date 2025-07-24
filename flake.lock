@@ -663,11 +663,11 @@
         "tauri-plugin-holochain": "tauri-plugin-holochain"
       },
       "locked": {
-        "lastModified": 1753262068,
-        "narHash": "sha256-ehpNwvHlK7rXr452RoIdaZsJzSJvZKGcE9PJEQjJp7w=",
+        "lastModified": 1753348049,
+        "narHash": "sha256-TSJSPHJHmNoY1fcGgLO3GkHO1DK2HD8XfS+RtDcth2g=",
         "owner": "darksoil-studio",
         "repo": "holochain-utils",
-        "rev": "b4770ca65c94d94780cd1748074601275ea78df5",
+        "rev": "c2e33cd720ff67dec6ab6c5acd0021d5cd57159e",
         "type": "github"
       },
       "original": {
@@ -2582,11 +2582,11 @@
         "webkitnixpkgs": "webkitnixpkgs"
       },
       "locked": {
-        "lastModified": 1753258757,
-        "narHash": "sha256-lw8MZteXhbtckBk/O7585hMVKs2BgjUHJ+ciH3QN/Zk=",
+        "lastModified": 1753307918,
+        "narHash": "sha256-q55Z/sEcQiiBIXzmpb4F2LY6cDj0m6nl4p2F81DVq+E=",
         "owner": "darksoil-studio",
         "repo": "tauri-plugin-holochain",
-        "rev": "bd40ed3dab7359d4751524a1ac49d3b34cf9c358",
+        "rev": "47a40f16627189456d371bac404d2777c2eaa3c0",
         "type": "github"
       },
       "original": {
