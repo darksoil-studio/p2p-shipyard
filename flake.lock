@@ -2076,11 +2076,11 @@
         "service-providers": "service-providers"
       },
       "locked": {
-        "lastModified": 1753352798,
-        "narHash": "sha256-8Y+ixWIKxxZ5FGDVp8VlHTzePP/vDedSPyxSyNgMweI=",
+        "lastModified": 1753472885,
+        "narHash": "sha256-kiM53pxSei7QCHTRjyS9aMpsqyqZJ1TGICB9bU7olJo=",
         "owner": "darksoil-studio",
         "repo": "push-notifications-service",
-        "rev": "520452c5b4eb62de33fcec1160f79e9197d1d59c",
+        "rev": "081b871599dd90d792c1f3fe8b0aed6848f9f4ad",
         "type": "github"
       },
       "original": {
@@ -2402,11 +2402,11 @@
         "service-providers": "service-providers_2"
       },
       "locked": {
-        "lastModified": 1753352969,
-        "narHash": "sha256-JmPfmsag+24Rd8deDo3/2+RJg74G3Wb9+Kq64gcT0oA=",
+        "lastModified": 1753472804,
+        "narHash": "sha256-hJ9DheFxF3ZMupmHHiqS/GrJ8lcEjE7P7P1tFrE4zaU=",
         "owner": "darksoil-studio",
         "repo": "safehold",
-        "rev": "7515a89ed03d1b63ab572fe225b8b8a07c2850fc",
+        "rev": "de71dcaf27075a090ca3257b9720bea675eb3c63",
         "type": "github"
       },
       "original": {
@@ -2475,11 +2475,11 @@
         "roles-zome": "roles-zome"
       },
       "locked": {
-        "lastModified": 1752663721,
-        "narHash": "sha256-5cQ8tOXcAUgDLBawuImN+Na9TAeOkSwhe7yE7qsPDzE=",
+        "lastModified": 1753472766,
+        "narHash": "sha256-rBkHArdg3yo1+3pavixpahmxqj1w/kCGi19ytNvQMRE=",
         "owner": "darksoil-studio",
         "repo": "service-providers",
-        "rev": "6cac02e19ce79cb8a0f66b31193f6d8575fb8508",
+        "rev": "65aeac3955aa69690ecb1fe745c06c05d388a6f1",
         "type": "github"
       },
       "original": {
@@ -2533,11 +2533,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1752663721,
-        "narHash": "sha256-5cQ8tOXcAUgDLBawuImN+Na9TAeOkSwhe7yE7qsPDzE=",
+        "lastModified": 1753472766,
+        "narHash": "sha256-rBkHArdg3yo1+3pavixpahmxqj1w/kCGi19ytNvQMRE=",
         "owner": "darksoil-studio",
         "repo": "service-providers",
-        "rev": "6cac02e19ce79cb8a0f66b31193f6d8575fb8508",
+        "rev": "65aeac3955aa69690ecb1fe745c06c05d388a6f1",
         "type": "github"
       },
       "original": {
