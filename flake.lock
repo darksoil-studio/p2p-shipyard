@@ -2402,11 +2402,11 @@
         "service-providers": "service-providers_2"
       },
       "locked": {
-        "lastModified": 1755607868,
-        "narHash": "sha256-6kc44eyBvLV1cK7pLtIDmPr9QDFfNXcx78fDpYx2rVc=",
+        "lastModified": 1755609304,
+        "narHash": "sha256-2UN2iw1TGC+sHvod2ZKRcJMTaGb2gg8Gyanwp5XM1rM=",
         "owner": "darksoil-studio",
         "repo": "safehold",
-        "rev": "9b3857c409a1ffa0c832f0241464f06607933630",
+        "rev": "aba645bacb4a6ed7b16e82667c968ea5df28e4c1",
         "type": "github"
       },
       "original": {
