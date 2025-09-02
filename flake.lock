@@ -261,11 +261,11 @@
         "private-event-sourcing-zome": "private-event-sourcing-zome"
       },
       "locked": {
-        "lastModified": 1755949755,
-        "narHash": "sha256-knIW9uWqzk5vlgyiKxBoQKwKKcwe7UybX0/4wCjafqI=",
+        "lastModified": 1756802754,
+        "narHash": "sha256-jbO9i7UoQDUA7om605fvPnxYLpMr4dOYg762mHIxBiU=",
         "owner": "darksoil-studio",
         "repo": "friends-zome",
-        "rev": "10f63c7d08b23ef9ac6f561da33f7413bef4762b",
+        "rev": "1016097df144b4970e75ccb99199edb80d0ab1cf",
         "type": "github"
       },
       "original": {
