@@ -44,7 +44,7 @@
     safehold.url = "github:darksoil-studio/safehold/main-0.6";
     safehold.inputs.holochain-utils.follows = "holochain-utils";
 
-    always-online-nodes.url = "github:darksoil-studio/always-online-nodes/main";
+    always-online-nodes.url = "github:darksoil-studio/always-online-nodes/main-0.6";
     always-online-nodes.inputs.holochain-utils.follows = "holochain-utils";
   };
 

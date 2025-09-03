@@ -17,16 +17,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1756800933,
-        "narHash": "sha256-M+azHkN1mjGSL0jf8AxgR/1gRDkZEaUDwZg8KoCJKQE=",
+        "lastModified": 1756913287,
+        "narHash": "sha256-dBz4VYUo5ml6pVTJXGc2siMKs0pBngv9WytiINlwGKE=",
         "owner": "darksoil-studio",
         "repo": "always-online-nodes",
-        "rev": "9dc96b84d797862f2bafea63d4776f09a1c3a061",
+        "rev": "2843fa3c53539c013f391948e1fb5d22ff781eb4",
         "type": "github"
       },
       "original": {
         "owner": "darksoil-studio",
-        "ref": "main",
+        "ref": "main-0.6",
         "repo": "always-online-nodes",
         "type": "github"
       }
@@ -1607,11 +1607,11 @@
         "service-providers": "service-providers"
       },
       "locked": {
-        "lastModified": 1756918266,
-        "narHash": "sha256-sfi95qGyaYFHRSStULi1KhYW1Yh5xv+uLuK+Rx7PrVQ=",
+        "lastModified": 1756919731,
+        "narHash": "sha256-VV+awft0+NYJimGOOVZfu+lOjAUq8W8NGPoOGAF2LzA=",
         "owner": "darksoil-studio",
         "repo": "push-notifications-service",
-        "rev": "42dd9512be4d089079a609b07d0a063960e07b5c",
+        "rev": "caa3fa4114abbcb7182002d15fb3377d37f5cdef",
         "type": "github"
       },
       "original": {
