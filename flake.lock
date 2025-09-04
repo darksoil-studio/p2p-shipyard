@@ -17,11 +17,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756913287,
-        "narHash": "sha256-dBz4VYUo5ml6pVTJXGc2siMKs0pBngv9WytiINlwGKE=",
+        "lastModified": 1756988050,
+        "narHash": "sha256-qLIybx/GMtR8crCq6ohkxrEnY2wGSXYlnysZorjiI+w=",
         "owner": "darksoil-studio",
         "repo": "always-online-nodes",
-        "rev": "2843fa3c53539c013f391948e1fb5d22ff781eb4",
+        "rev": "040b46c6035d0d24495480f6610be3e379b8150f",
         "type": "github"
       },
       "original": {
@@ -1607,11 +1607,11 @@
         "service-providers": "service-providers"
       },
       "locked": {
-        "lastModified": 1756919731,
-        "narHash": "sha256-VV+awft0+NYJimGOOVZfu+lOjAUq8W8NGPoOGAF2LzA=",
+        "lastModified": 1756988063,
+        "narHash": "sha256-rE3dvWWHYNiVy4lfiTx0CtVr0EGGqCAUU0X/XEqGZtw=",
         "owner": "darksoil-studio",
         "repo": "push-notifications-service",
-        "rev": "caa3fa4114abbcb7182002d15fb3377d37f5cdef",
+        "rev": "f1197eeac06f4ee5596c787c9cefb463a664166e",
         "type": "github"
       },
       "original": {
@@ -1887,11 +1887,11 @@
         "service-providers": "service-providers_2"
       },
       "locked": {
-        "lastModified": 1756918205,
-        "narHash": "sha256-MDzsZZphOapN90tB7IVa6pvP3HuHXYcnTV+1usfmuII=",
+        "lastModified": 1756988081,
+        "narHash": "sha256-lhXQrTS5soer+UW+uWCLxXexZWWgX4xjEA1lfbNbvbM=",
         "owner": "darksoil-studio",
         "repo": "safehold",
-        "rev": "474bd22ac2bb9631a59b8e9510955e03e771b23b",
+        "rev": "31e4acad0bf4ea2c37f499a79cb2bb62f9bcb8d7",
         "type": "github"
       },
       "original": {
