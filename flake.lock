@@ -1054,11 +1054,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1757087867,
-        "narHash": "sha256-JFmQaT+7qJsZOw+FoNb4lRJkJiLPlrjvgOPIq+lIGh0=",
+        "lastModified": 1757151674,
+        "narHash": "sha256-aaz21Tj9pWx9h4G6tRIXjVPQEa3gL2dTU7AXwMVbEsg=",
         "owner": "darksoil-studio",
         "repo": "messenger-zome",
-        "rev": "3214d80c1de45c449ad913e08243118ec037bf90",
+        "rev": "01ee82c61e7d2d012601417fb214120d0ed05d5f",
         "type": "github"
       },
       "original": {
