@@ -1607,11 +1607,11 @@
         "service-providers": "service-providers"
       },
       "locked": {
-        "lastModified": 1757101846,
-        "narHash": "sha256-3/Ra37yiopiyFVVcaun+kFiGrTjX4OHQlClw872afD0=",
+        "lastModified": 1757152387,
+        "narHash": "sha256-OEJrwJAevl7G5tl83X0lcVHHD3Za/2Ax/zMtzjTTE8k=",
         "owner": "darksoil-studio",
         "repo": "push-notifications-service",
-        "rev": "57e8f4e2c2ef345e021084c0755c6ec83c7e98c5",
+        "rev": "a1885edca6a110d9b04ad6bb15e282882f825bf3",
         "type": "github"
       },
       "original": {
