@@ -10,7 +10,10 @@ Feel free to contact us at hello@darksoil.studio for questions and clarification
 <br>
 
 <div style="display: flex; justify-content: center; margin-top: 64px;">
-<stripe-buy-button buy-button-id="buy_btn_1RZbECEZU356qiCHiE894G3Z" publishable-key="pk_live_51Q9oAsEZU356qiCHNYG4q959g81o5MqR0nQ1RPAEiB0wCFOGoZ25hndIfig1BfMKwzbYCycgMvBfJTuQQCHjcknt00uAmYhCqS">
+<stripe-buy-button
+  buy-button-id="buy_btn_1T1RtzEZU356qiCHYaRk5yhi"
+  publishable-key="pk_live_51Q9oAsEZU356qiCHNYG4q959g81o5MqR0nQ1RPAEiB0wCFOGoZ25hndIfig1BfMKwzbYCycgMvBfJTuQQCHjcknt00uAmYhCqS"
+>
 </stripe-buy-button>
 </div>
 
