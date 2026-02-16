@@ -7,42 +7,42 @@
     flake-parts.follows = "holochain-utils/holonix/flake-parts";
     crane.follows = "holochain-utils/crane";
 
-    linked-devices-zome.url =
-      "github:darksoil-studio/linked-devices-zome/main-0.6";
-    linked-devices-zome.inputs.holochain-utils.follows = "holochain-utils";
+    # linked-devices-zome.url =
+    #   "github:darksoil-studio/linked-devices-zome/main-0.6";
+    # linked-devices-zome.inputs.holochain-utils.follows = "holochain-utils";
 
-    file-storage.url = "github:darksoil-studio/file-storage/main-0.6";
-    file-storage.inputs.holochain-utils.follows = "holochain-utils";
+    # file-storage.url = "github:darksoil-studio/file-storage/main-0.6";
+    # file-storage.inputs.holochain-utils.follows = "holochain-utils";
 
-    profiles-zome.url = "github:darksoil-studio/profiles-zome/main-0.6";
-    profiles-zome.inputs.holochain-utils.follows = "holochain-utils";
-    profiles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
+    # profiles-zome.url = "github:darksoil-studio/profiles-zome/main-0.6";
+    # profiles-zome.inputs.holochain-utils.follows = "holochain-utils";
+    # profiles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
-    roles-zome.url = "github:darksoil-studio/roles-zome/main-0.6";
-    roles-zome.inputs.holochain-utils.follows = "holochain-utils";
-    roles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
-    roles-zome.inputs.profiles-zome.follows = "profiles-zome";
+    # roles-zome.url = "github:darksoil-studio/roles-zome/main-0.6";
+    # roles-zome.inputs.holochain-utils.follows = "holochain-utils";
+    # roles-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
+    # roles-zome.inputs.profiles-zome.follows = "profiles-zome";
 
-    friends-zome.url = "github:darksoil-studio/friends-zome/main-0.6";
-    friends-zome.inputs.holochain-utils.follows = "holochain-utils";
-    friends-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
+    # friends-zome.url = "github:darksoil-studio/friends-zome/main-0.6";
+    # friends-zome.inputs.holochain-utils.follows = "holochain-utils";
+    # friends-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
-    messenger-zome.url = "github:darksoil-studio/messenger-zome/main-0.6";
-    messenger-zome.inputs.holochain-utils.follows = "holochain-utils";
-    messenger-zome.inputs.profiles-zome.follows = "profiles-zome";
-    messenger-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
+    # messenger-zome.url = "github:darksoil-studio/messenger-zome/main-0.6";
+    # messenger-zome.inputs.holochain-utils.follows = "holochain-utils";
+    # messenger-zome.inputs.profiles-zome.follows = "profiles-zome";
+    # messenger-zome.inputs.linked-devices-zome.follows = "linked-devices-zome";
 
-    service-providers.url = "github:darksoil-studio/service-providers/main-0.6";
-    service-providers.inputs.holochain-utils.follows = "holochain-utils";
-    service-providers.inputs.roles-zome.follows = "roles-zome";
+    # service-providers.url = "github:darksoil-studio/service-providers/main-0.6";
+    # service-providers.inputs.holochain-utils.follows = "holochain-utils";
+    # service-providers.inputs.roles-zome.follows = "roles-zome";
 
-    push-notifications-service.url =
-      "github:darksoil-studio/push-notifications-service/main-0.6";
-    push-notifications-service.inputs.holochain-utils.follows =
-      "holochain-utils";
+    # push-notifications-service.url =
+    #   "github:darksoil-studio/push-notifications-service/main-0.6";
+    # push-notifications-service.inputs.holochain-utils.follows =
+    #   "holochain-utils";
 
-    safehold.url = "github:darksoil-studio/safehold/main-0.6";
-    safehold.inputs.holochain-utils.follows = "holochain-utils";
+    # safehold.url = "github:darksoil-studio/safehold/main-0.6";
+    # safehold.inputs.holochain-utils.follows = "holochain-utils";
 
     # always-online-nodes.url = "github:darksoil-studio/always-online-nodes/main-0.6";
     # always-online-nodes.inputs.holochain-utils.follows = "holochain-utils";
@@ -99,14 +99,15 @@
           };
 
         packages = inputs'.holochain-utils.packages
-          // inputs'.linked-devices-zome.packages
-          // inputs'.file-storage.packages // inputs'.profiles-zome.packages
-          // inputs'.roles-zome.packages // inputs'.friends-zome.packages
-          // inputs'.messenger-zome.packages
-          // inputs'.service-providers.packages
+          # // inputs'.linked-devices-zome.packages
+          # // inputs'.file-storage.packages // inputs'.profiles-zome.packages
+          # // inputs'.roles-zome.packages // inputs'.friends-zome.packages
+          # // inputs'.messenger-zome.packages
+          # // inputs'.service-providers.packages
           # // inputs'.always-online-nodes.packages
-          // inputs'.push-notifications-service.packages
-          // inputs'.safehold.packages // { };
+          # // inputs'.push-notifications-service.packages
+          # // inputs'.safehold.packages
+          // { };
       };
     };
 }
