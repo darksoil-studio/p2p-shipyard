@@ -1,36 +1,5 @@
 {
   "nodes": {
-    "always-online-nodes": {
-      "inputs": {
-        "crane": [
-          "always-online-nodes",
-          "holochain-utils",
-          "crane"
-        ],
-        "holochain-utils": [
-          "holochain-utils"
-        ],
-        "nixpkgs": [
-          "always-online-nodes",
-          "holochain-utils",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1757101811,
-        "narHash": "sha256-8FvrrbkAv2kxwiqkaIkFrUHu0MalWQfPMVxM5KKLmbM=",
-        "owner": "darksoil-studio",
-        "repo": "always-online-nodes",
-        "rev": "b1ec7bec079db685034012ec4d012e259e2f82fe",
-        "type": "github"
-      },
-      "original": {
-        "owner": "darksoil-studio",
-        "ref": "main-0.6",
-        "repo": "always-online-nodes",
-        "type": "github"
-      }
-    },
     "clone-manager": {
       "inputs": {
         "holochain-utils": [
@@ -1746,7 +1715,6 @@
     },
     "root": {
       "inputs": {
-        "always-online-nodes": "always-online-nodes",
         "crane": [
           "holochain-utils",
           "crane"
